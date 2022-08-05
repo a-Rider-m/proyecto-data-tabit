@@ -143,7 +143,6 @@ main {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--warm-black);
-    text-align: center;
 }
 
 .main-exchange-container__title p {
@@ -152,7 +151,6 @@ main {
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
-    text-align: center;
 }
 
 /*Sección 2*/
@@ -163,7 +161,7 @@ main {
     margin-top: 15px;
 }
 
-.main-exchange-container__title {
+.main-exchange-container__table-title {
     text-align: start;
     font-size: 1.8rem;
     font-weight: 700;
@@ -171,7 +169,7 @@ main {
     color: var(--bitcoin-orange);
 }
 
-.main-exchange-container__title--blue {
+.main-exchange-container__table-title--blue {
     text-align: start;
     font-size: 1.8rem;
     font-weight: 700;
