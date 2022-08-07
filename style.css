@@ -30,6 +30,7 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+/*Empieza el header*/
 header {
     position: relative;
     display: flex;
@@ -74,7 +75,7 @@ header img {
     color: var(--soft-orange);
 }
 
-.header__title-container .header__button {
+.header__button {
     position: absolute;
     top: 270px;
     left: calc(50% - 120px);
@@ -101,7 +102,6 @@ header img {
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
 }
-/* Aquí termina el header*/
 
 main {
     width: 100%;
@@ -109,20 +109,18 @@ main {
     background-color: var(--off-white);
 }
 
-/*Sección 1 */
-
-.main-exchange-container {
+/*Aqui empieza la sección 1 */
+.main-container {
     width: 100%;
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding: 80px 0 30px;
+    text-align: center;
 }
 
-.main-exchange-container__backgroundImg {
+.main-container__BitcoinImg {
     width: 200px;
     height: 200px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     background-image: url('./assets/img/Bitcoin.svg');
     background-size: cover;
     background-position: center;
@@ -130,14 +128,15 @@ main {
     
 }
 
-.main-exchange-container__title {
+/*Aquí comienza el titulo y subtitulo de esta sección*/
+.main-container__title {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.main-exchange-container__title h2 {
+.main-container__title h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -145,7 +144,7 @@ main {
     color: var(--warm-black);
 }
 
-.main-exchange-container__title p {
+.main-container__title p {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -153,15 +152,13 @@ main {
     color: #757575;
 }
 
-/*Sección 2*/
-
-.main-exchange-container__table-container {
+/*Aquí comienzan las tablas de esta sección*/
+.exchange-table {
     width: 220px;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 15px auto 0;
 }
 
-.main-exchange-container__table-title {
+.exchange-table__title {
     text-align: start;
     font-size: 1.8rem;
     font-weight: 700;
@@ -169,28 +166,24 @@ main {
     color: var(--bitcoin-orange);
 }
 
-.main-exchange-container__table-title--blue {
-    text-align: start;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 2.3rem;
+.exchange-table__title--blue {
     color: var(--secondary-blue);
 }
 
-.main-exchange-container__table {
+.exchange-table__container {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 110px 110px;
     grid-template-rows: repeat(4, 40px);
     gap:  1px;
     margin: 15px 0px;
     font-family: 'inter';
     background-color: var(--off-white);
     grid-auto-flow: column;
-    align-items: center;
-    border-radius: 8px;
+    text-align: start;
 }
 
-.main-exchange-container__table p {
+/*Aquí comienza el contenido de las tablas*/
+.exchange-table__item {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
@@ -199,33 +192,66 @@ main {
     color: #b5b0ac;
 }
 
-.main-exchange-container__table h4 {
+.exchange-table__item:nth-child(1) {
+    border-radius: 15px 0 0 0;
+}
+
+.exchange-table__item:nth-child(4) {
+    border-radius: 0 0 0 15px;
+}
+
+.exchange-table__value {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6rem;
     padding: 10px 12px;
     background-color: var(--just-white);
     color: #757575;
+    text-align: center;
 }
 
-.main-exchange-container__table h4 span {
+.exchange-table__value:nth-child(5) {
+    border-radius: 0 15px 0 0;
+}
+
+.exchange-table__value:nth-child(8) {
+    border-radius: 0 0 15px 0;
+}
+
+.exchange-table__value span{
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-left: 15px;
-    background-image: url('./assets/icons/trending-up.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
-.main-exchange-container__table h4:nth-child(7) span {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 15px;
+.exchange-table__value--down {
     background-image: url('./assets/icons/trending-down.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
+
+.exchange-table__value--up {
+    background-image: url('./assets/icons/trending-up.svg');
+
+}
+/*Aquí termina el contenido de las tablas*/
+
+.main-container__exchange-date {
+    width: 190px;
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.main-container__exchange-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+
+/*Aqui empieza la seccion 2*/
