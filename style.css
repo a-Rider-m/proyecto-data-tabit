@@ -84,15 +84,15 @@ header img {
     padding: 15px;
     width: 229px;
     height: 48px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
     background-color: var(--off-white);
+    color: var(--warm-black);
     /* Sombra*/
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--warm-black);
 }
 
 .header__button span {
@@ -130,7 +130,7 @@ main {
 }
 
 /*Inicio titulo y subtitulo de esta sección*/
-.main-container__title {
+.title-container {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -175,20 +175,20 @@ main {
     display: grid;
     grid-template-columns: 110px 110px;
     grid-template-rows: repeat(4, 40px);
+    grid-auto-flow: column;
     gap:  1px;
     margin: 15px 0px;
     font-family: 'inter';
-    background-color: var(--off-white);
-    grid-auto-flow: column;
     text-align: start;
+    background-color: var(--off-white);
 }
 
 /*Inicio contenido de las tablas*/
 .exchange-table__item {
+    padding: 10px 12px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    padding: 10px 12px;
     background-color: var(--just-white);
     color: #b5b0ac;
 }
@@ -202,13 +202,13 @@ main {
 }
 
 .exchange-table__value {
+    padding: 10px 12px;
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6rem;
-    padding: 10px 12px;
     background-color: var(--just-white);
     color: #757575;
-    text-align: center;
 }
 
 .exchange-table__value:nth-child(5) {
@@ -262,12 +262,12 @@ main {
 }
 
 .product-detail__img {
-    position: absolute;
     display: inline-block;
-    width: 38px;
-    height: 24px;
+    position: absolute;
     top: -12.5px;
     left: calc(50% - 18.72px);
+    width: 38px;
+    height: 24px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -286,23 +286,26 @@ main {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
-   color: #808080; 
+    color: #808080; 
 }
 
 .product-detail__cards-container {
     width: 100%;
+    min-width: 320px;
     height: auto;
     padding: 40px 0;
 }
 
 .product-detail__card {
     width: 288px;
-    height: 152px;
+    height: auto;
+    min-height: 152px;
     margin: 15px auto;  
     padding: 12px;
-    background-color: var(--warm-black-1);
     text-align: start;
+    background-color: var(--warm-black-1);
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
 .product-detail__card-img {
@@ -348,11 +351,12 @@ main {
 /*Inicio seccion 3*/
 .knowledge {
     width: 100%;
+    min-width: 320px;
     height: 387px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('./assets/img/bitcoinbaby.png');
+    background-image: url('./assets/img/bitcoinbaby2x.png');
 }
 
 .knowledge h2 {
@@ -360,4 +364,105 @@ main {
     font-weight: 700;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+/*Inicio seccion 4*/
+.payment-plans__title h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+
+}
+
+.payment-plans__title p {
+    margin: 20px 0 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.payment-plans__card {
+    position: relative;
+    width: 190px;
+    height: 247px;
+    margin: 0 auto 40px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.payment-plans__recommended {
+    position: absolute;
+    top: -15.5px;
+    left: calc(50% - 50.5px);
+    width: 101px;
+    height: 31px;
+    padding: 6px;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+}
+
+.payment-plans__content {
+    padding: 25px 8px 10px;
+}
+
+.content__title {
+   font-size: 1.4rem; 
+   font-weight: 500;
+   line-height: 1.8rem;
+}
+
+.content__price {
+    margin: 10px;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+}
+
+.content__price span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    vertical-align: 25px;
+}
+
+.content__saving {
+    margin: 15px 0;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #757575;
+}
+
+.content__ca {
+    width: 151px;
+    height: 48px;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    border-radius: 4px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--off-white);
+}
+
+.payment-plans__content button span {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
 }
