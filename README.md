@@ -1,2 +1,2 @@
 # proyecto-data-tabit
-Mi primer proyecto mobile first
+Este es un proyecto que estoy realizando con lo aprendido en el curso de HTML y CSS Definitivo de Platzi, donde estamos implementado la metodología BEM, y las buenas prácticas de la programación, a este proyecto se le dio inicio con el concepto Mobile First, donde empezamos diseñando el sitio para dispositivos móviles y posteriormente lo escalamos a dispositivos de escritorio.
