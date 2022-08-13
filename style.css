@@ -383,17 +383,40 @@ main {
     color: #757575;
 }
 
+.payment-plans__plans-slider {
+    display: flex;
+    place-items: center;
+    width: 200px;
+    height: 300px;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+.payment-plans__plans-slider::-webkit-scrollbar {
+    height: 2px;
+    background-color: transparent;
+}
+
+.payment-plans__plans-slider::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--bitcoin-orange);
+}
+
 .payment-plans__card {
     position: relative;
+    scroll-snap-align: center;
     width: 190px;
     height: 247px;
-    margin: 0 auto 40px;
+    margin: 0 5px 0px;
     background-color: var(--just-white);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.payment-plans__recommended {
+.payment-plans__title-card {
     position: absolute;
     top: -15.5px;
     left: calc(50% - 50.5px);
@@ -407,6 +430,15 @@ main {
     color: var(--just-white);
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
+}
+
+.title-card--blue {
+    background-color: var(--secondary-blue);
+}
+
+.title-card--gray {
+    background-color: var(--grey);
+    color: var(--warm-black);
 }
 
 .payment-plans__content {
@@ -461,8 +493,35 @@ main {
     width: 20px;
     height: 14px;
     margin-left: 2px;
+    vertical-align: text-bottom;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url('./assets/icons/orange-right-arrow.svg');
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer section ul {
+    list-style: none;
+}
+
+footer section ul li a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: var(--just-white);
 }
