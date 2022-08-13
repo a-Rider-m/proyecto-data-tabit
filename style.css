@@ -514,14 +514,18 @@ footer section {
     width: 50%;
 }
 
-footer section ul {
+.footer-left__info {
     list-style: none;
-}
-
-footer section ul li a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    text-decoration: none;
+}
+
+.footer-left__info li {
+    margin: 10px 0;
+}
+
+.footer-left__info li a {
     color: var(--just-white);
+    text-decoration: none;
 }
